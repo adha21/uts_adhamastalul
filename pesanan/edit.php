@@ -37,7 +37,7 @@ include_once('../navbar.php');
                     <input name="id" type="hidden" value="<?=$data['id']?>">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nama Pelanggan</label>
-                        <input type="text" readonly value="<?=$data['nama']?>" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" readonly value="<?=$data['nama_pelanggan']?>" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Produk</label>
@@ -49,7 +49,7 @@ include_once('../navbar.php');
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Tanggal</label>
-                        <input type="date" value="<?=$data['tanggal']?>" name="tanggal" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="date" value="<?=$data['tgl_pesan']?>" name="tanggal" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <button type="submit" class="btn btn-info btn-sm">Update</button>
                     <a class="btn btn-info btn-sm" href="index.php">Kembali</a>

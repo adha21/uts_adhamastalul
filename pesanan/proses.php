@@ -7,7 +7,7 @@ $produk = $_POST['produk'];
 $jumlah = $_POST['jumlah'];
 $tanggal = $_POST['tanggal'];
 #3. Menulis query
-$simpan = "INSERT INTO pesanans (nama, produk, jumlah, tanggal) VALUES ('$nama','$produk','$jumlah','$tanggal')";
+$simpan = "INSERT INTO pesanans (nama_pelanggan, produk, jumlah, tgl_pesan) VALUES ('$nama','$produk','$jumlah','$tanggal')";
 #4. Jalankan query
 $proses = mysqli_query($koneksi, $simpan);
 ?>

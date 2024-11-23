@@ -8,7 +8,7 @@ $produk = $_POST['produk'];
 $jumlah = $_POST['jumlah'];
 $tanggal = $_POST['tanggal'];
 #3. Menulis query
-$sunting = "UPDATE pesanans SET nama='$nama',produk='$produk',jumlah='$jumlah',tanggal='$tanggal' WHERE id='$id'";
+$sunting = "UPDATE pesanans SET nama_pelanggan='$nama',produk='$produk',jumlah='$jumlah',tgl_pesan='$tanggal' WHERE id='$id'";
 #4. Jalankan query
 $proses = mysqli_query($koneksi, $sunting);
 ?>

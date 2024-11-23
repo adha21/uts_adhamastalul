@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Pesanan</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/all.css">
 </head>
 <body>
 <?php
-include_once('navbar.php');
+include_once('../navbar.php');
 ?>
 
 <div class="container">
@@ -35,7 +35,7 @@ include_once('navbar.php');
                     <tbody>
                         <?php
                         #1. koneksikan file ini
-                        include("koneksi.php");
+                        include("../koneksi.php");
                         #2. Menulis query
                         $tampil = "SELECT * FROM pesanans";
                         #3. Jalankan query
@@ -46,10 +46,10 @@ include_once('navbar.php');
                         ?>
                         <tr>
                         <th scope="row"><?=$nomor++?></th>
-                        <td><?=$data['nama']?></td>
+                        <td><?=$data['nama_pelanggan']?></td>
                         <td><?=$data['produk']?></td>
                         <td><?=$data['jumlah']?></td>
-                        <td><?=$data['tanggal']?></td>
+                        <td><?=$data['tgl_pesan']?></td>
                         <td>
                             <a class="btn btn-info btn-sm" href="edit.php?id=<?=$data['id']?>"><i class="fa fa-pen-to-square"></i></a>
                             <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus<?=$data['id']?>">
@@ -64,7 +64,7 @@ include_once('navbar.php');
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    Yakin data <b><?=$data['produk']?><?=$data['jumlah']?><?=$data['tanggal']?></b> ingin dihapus?
+                                    Yakin data <b><?=$data['nama_pelanggan']?></b> ingin dihapus?
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
@@ -85,8 +85,8 @@ include_once('navbar.php');
         </div>
     </div>
 </div>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/all.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/all.js"></script>
 </body>
 </html>

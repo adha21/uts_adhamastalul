@@ -20,7 +20,7 @@ include_once('navbar.php');
             </div>
             <div class="card-body">
                 <h4>Halo, Selamat Datang </h4>
-                <p>Track my package has never been that easy with this global parcel tracking tool allowing you to track parcels from any post office. A powerful universal parcel tracking system that will provide you with  shipment info by tracking number lookup from any international courier such as China Post, Speedpak, 4PX Express, Amazon Logistics TBA, EMS ePacket, Dynamex, Aliexpress - Standard Shipping, Intelcom Express, Hermes, Deutsche Post - DHL Global mail - DHL Ecommerce, Yanwen, Canpar, Yunexpress, Pitney Bowes Inc - PBI, BNI - BNICA and many more!</p>
+                <p>Lacak paket saya tidak pernah semudah ini dengan alat pelacakan paket global yang memungkinkan Anda melacak paket dari kantor pos mana pun.</p>
             </div>
         </div>
         </div>
